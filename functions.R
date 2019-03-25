@@ -33,12 +33,12 @@ getLawList <- function(text){
 getBestScore <- function(resultRequest){
   maxScore = resultRequest$hits$max_score
   hits = as.data.frame(resultRequest$hits)
-  hits = hits[hits$hits._score == maxScore,]
+  hits = hits[hits$hits._score >= maxScore-0.5,]
   return(hits)
 }
 
 lawNames = c(
-  "Impostos sobre a Importação",
+  "Impostos sobre a Importacao",
   "Impostos sobre Exportação",
   "Imposto sobre a Propriedade Territorial Rural",
   "Impostos sobre a Propriedade Predial e Territorial Urbana",
@@ -72,19 +72,27 @@ aliquotList = c(
 taxList = data.frame(name=lawNames, code = lawCode, aliquot = aliquotList)
 
 
-#imp = "I Imposto sobre Propriedade Territorial Rural O imposto competencia Uniao sobre propriedade territorial ruraltem fato gerador propriedade dominio util posse imovel natureza definido lei civil localizacao zona urbana Municipio A base calculo imposto e valor fundiario Contribuinte imposto e proprietario imovel titular dominioutil possuidor qualquer titulo"
-#str_detect(str_split(toupper("Imposto sobre a Propriedade Territorial Rural"),fixed(" "))[[1]],toupper(imp))
+imp = "I Imposto sobre Propriedade Territorial Rural O imposto competencia Uniao sobre propriedade territorial ruraltem fato gerador propriedade dominio util posse imovel natureza definido lei civil localizacao zona urbana Municipio A base calculo imposto e valor fundiario Contribuinte imposto e proprietario imovel titular dominioutil possuidor qualquer titulo"
+res = str_detect(toupper(imp), str_split(toupper("Imposto sobre a Propriedade Territorial Rural"),fixed(" "))[[1]])
+
 #str_detect("%carlos%","carlos melo")
 
-
-
-
 classifyByName <- function(lawList){
+  freqs = c()
+  i = 1
   for (name in taxList$name) {
     #if(str_detect(toupper(name),toupper(lawList)))
-    if(grepl(x=lawList,
-             pattern = str_split(name,fixed(" "))[[1]],
-             ignore.case = TRUE)) 
+   # if(grepl(x=lawList,
+    #         pattern = str_split(name,fixed(" "))[[1]],
+     #        ignore.case = TRUE)){
+      
+    #}
+    fq = str_detect(toupper(imp), 
+                          str_split(toupper("Imposto sobre a Propriedade Territorial Rural"),
+                                    fixed(" "))[[1]])
+    freqs[i] = count(fq)$freq[1]
+    taxList = cbind(taxList,freqs)
+    taxList
      return(taxList[taxList$name == name,])
   }
   return(NULL)

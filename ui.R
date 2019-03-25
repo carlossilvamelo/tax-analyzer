@@ -27,7 +27,7 @@ fluidPage(
                 box(id="boxTablePreview",class="containerTable",width = "100%",
                     collapsible = T,
                     numericInput("inputValue", "R$:", 100, min = 0),
-                    textAreaInput("textCenario", "cenario", width = "100%"),
+                    textAreaInput("textCenario",value = "objetos vindos de outro pais, produto extrangeiro Exportacao exportados", "cenario", width = "100%"),
                     
                     actionButton("btDescCenario", "send")
                 ),

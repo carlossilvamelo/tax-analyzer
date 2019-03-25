@@ -3,18 +3,27 @@ server <- function(input, output, session) {
   
   observeEvent(input$btDescCenario,{
     result = getLawList(input$textCenario)
-    hit = getBestScore(result)
-    #print(hit$hits._source$law)
-    #print(classifyByName(hit$hits._source$law))
-    taxList = classifyByName(hit$hits._source$law)
-    taxName = as.character(taxList$name[1])
-    code = as.character(taxList$code[1])
-    aliquot = as.numeric(taxList$aliquot[1])
-    value = as.numeric(input$inputValue)
+    hits = getBestScore(result)
+    #print(class(hits$hits._source$law))
+    #print(hits$hits._source$law)
+    hh = hits
+    #print(hits)
+    outputTax = ""
+    for (i in 1:nrow(hits$hits._source)) {
+      row = hits$hits._sourc[i,]
+      taxList = classifyByName(row$law)
+      taxName = as.character(taxList$name[1])
+      code = as.character(taxList$code[1])
+      aliquot = as.numeric(taxList$aliquot[1])
+      value = as.numeric(input$inputValue)
+      outputTax = str_c(outputTax, "Tax name: ",taxName," - ",code,
+                        "\nAliquot: ",aliquot,
+                        "\n value: ",value-(value*aliquot)
+                        ,"\n -------------------------------------- \n")
+      }
+    
     output$outputText <- renderText({ 
-      str_c("Imposto: ",taxName," - ",code,
-            "\n Aliquota: ",aliquot,
-            "\n value: ",value-(value*aliquot))  })
+      outputTax  })
   })
   
 }
