@@ -1,9 +1,8 @@
 
 library(tidyverse)
-install.packages("tidyverse")
+#install.packages("tidyverse")
 require(stringi)
 require(stringr)
-
 require(tm)
 
 tributes = c(read.delim2("tributario.txt", encoding = 'UTF-8'))

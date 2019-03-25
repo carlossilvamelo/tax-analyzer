@@ -4,6 +4,10 @@ server <- function(input, output, session) {
   observeEvent(input$btDescCenario,{
     result = getLawList(input$textCenario)
     hits = getBestScore(result)
+    if(is.null(hits)){
+      output$outputText <- renderText({ 
+        "no results" })
+    }else{
     #print(class(hits$hits._source$law))
     #print(hits$hits._source$law)
     hh = hits
@@ -11,6 +15,7 @@ server <- function(input, output, session) {
     outputTax = ""
     for (i in 1:nrow(hits$hits._source)) {
       row = hits$hits._sourc[i,]
+
       taxList = classifyByName(row$law)
       taxName = as.character(taxList$name[1])
       code = as.character(taxList$code[1])
@@ -20,10 +25,13 @@ server <- function(input, output, session) {
                         "\nAliquot: ",aliquot,
                         "\n value: ",value-(value*aliquot)
                         ,"\n -------------------------------------- \n")
-      }
-    
+      
+
+      
+    }
     output$outputText <- renderText({ 
       outputTax  })
+    }
   })
   
 }

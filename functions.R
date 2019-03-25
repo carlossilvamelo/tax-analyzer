@@ -31,22 +31,27 @@ getLawList <- function(text){
 
 
 getBestScore <- function(resultRequest){
+
+
+  if(resultRequest$hits$total == 0)
+    return(NULL)
   maxScore = resultRequest$hits$max_score
   hits = as.data.frame(resultRequest$hits)
-  hits = hits[hits$hits._score >= maxScore-0.5,]
+  hits = hits[hits$hits._score >= maxScore-0.7,]
   return(hits)
 }
 
 lawNames = c(
-  "Impostos sobre a Importacao",
-  "Impostos sobre Exportação",
-  "Imposto sobre a Propriedade Territorial Rural",
-  "Impostos sobre a Propriedade Predial e Territorial Urbana",
-  "Imposto sobre a Transmissão de Bens Imóveis e de Direitos a eles Relativos",
-  "Impostos sobre a Renda e Proventos de Qualquer Natureza",
+  "Impostos sobre Importacao",
+  "Impostos sobre Exportacao",
+  "Imposto sobre Propriedade Territorial Rural",
+  "Impostos sobre Propriedade Predial Territorial Urbana",
+  "Imposto sobre Transmissao Bens Imoveis Direitos Relativos",
+  "Impostos sobre Renda Proventos Qualquer Natureza",
   "Imposto sobre Produtos Industrializados",
-  "Imposto sobre Operações de Crédito, Câmbio e Seguro, e sobre Operações Relativas a Títulos e Valores Mobiliários",
-  "Imposto sobre Serviços de Transportes e Comunicações"
+  "Imposto sobre Operacoes Credito Cambio Seguro",
+  "Imposto sobre Servicos Transportes Comunicacoes",
+  "Imposto sobre Operacoes Relativas Combustiveis Lubrificantes"
 )
 lawCode = c("II", 
             "IE", 
@@ -56,7 +61,8 @@ lawCode = c("II",
             "IR",
             "IPI",
             "IOF",
-            "ISTC"
+            "ISTC",
+            "Impostos especiais"
             )
 aliquotList = c(
   0.18,
@@ -67,33 +73,27 @@ aliquotList = c(
   0.13,
   0.11,
   0.32,
-  0.08
+  0.08,
+  0.12
   )
 taxList = data.frame(name=lawNames, code = lawCode, aliquot = aliquotList)
 
 
-imp = "I Imposto sobre Propriedade Territorial Rural O imposto competencia Uniao sobre propriedade territorial ruraltem fato gerador propriedade dominio util posse imovel natureza definido lei civil localizacao zona urbana Municipio A base calculo imposto e valor fundiario Contribuinte imposto e proprietario imovel titular dominioutil possuidor qualquer titulo"
-res = str_detect(toupper(imp), str_split(toupper("Imposto sobre a Propriedade Territorial Rural"),fixed(" "))[[1]])
+#imp = "I Imposto sobre Propriedade Territorial Rural O imposto competencia Uniao sobre propriedade territorial ruraltem fato gerador propriedade dominio util posse imovel natureza definido lei civil localizacao zona urbana Municipio A base calculo imposto e valor fundiario Contribuinte imposto e proprietario imovel titular dominioutil possuidor qualquer titulo"
+#res = str_detect(toupper(imp), str_split(toupper("Imposto sobre a Propriedade Territorial Rural"),fixed(" "))[[1]])
 
-#str_detect("%carlos%","carlos melo")
 
-classifyByName <- function(lawList){
-  freqs = c()
-  i = 1
+classifyByName <- function(lawText){
+  result = data.frame()
+  print(lawText)
   for (name in taxList$name) {
-    #if(str_detect(toupper(name),toupper(lawList)))
-   # if(grepl(x=lawList,
-    #         pattern = str_split(name,fixed(" "))[[1]],
-     #        ignore.case = TRUE)){
-      
-    #}
-    fq = str_detect(toupper(imp), 
-                          str_split(toupper("Imposto sobre a Propriedade Territorial Rural"),
-                                    fixed(" "))[[1]])
-    freqs[i] = count(fq)$freq[1]
-    taxList = cbind(taxList,freqs)
-    taxList
-     return(taxList[taxList$name == name,])
+    #print(stri_trans_general(name, "Latin-ASCII"))
+    #print(lawText)
+    if(str_detect(stri_trans_general(toupper(lawText), "Latin-ASCII"), toupper(name))){
+
+      result = rbind(taxList[taxList$name == name,])
+    }
   }
-  return(NULL)
+  return(result)
+  #return(taxList[taxList$name == name,])
 }

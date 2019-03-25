@@ -16,12 +16,11 @@ da política cambial e do comércio exterior.
 Art. 22.    Contribuinte do imposto é:
         I – o importador ou quem a lei a ele equiparar;
         II – o arrematante de produtos apreendidos ou abandonados.
+outro pais extrangeiro Afeganistão África do Sul Albânia brasil Alemanha Antártida Arábia Saudita Argélia Argentina Armênia Austrália Áustria Azerbaijão Bahamas Bahrein Bangladesh Barbados Belarus Bélgica Belize Benin Bermudas Bolívia Bulgária Canadá Chile China Colômbia Congo Coréia do Norte Coréia do Sul Costa do Marfim Costa Rica Croácia Cuba Curaçao Dinamarca Djibuti Dominica Egito Emirados Árabes Unidos Equador Eslováquia Eslovênia Espanha Estados Unidos França Grécia Irlanda Islândia Israel Itália Jamaica Japão Jersey Jordânia Kiribati Porto Rico Portugal Quênia República Dominicana República Tcheca Suécia Suíça Suriname Tadjiquistão Tailândia Taiwan Tanzânia Território Britânico do Oceano Índico Territórios do Sul da França Territórios Palestinos Ocupados Timor Leste Togo Tonga Trinidad & Tobago Tunísia Turcomenistão Turquia Tuvalu Ucrânia Uganda Uruguai Uzbequistão Vanuatu Vaticano Venezuela
 
                                         SEÇÃO II
                                  Impostos sobre Exportação
-Art. 23. O imposto, de competência da União, sobre a exportação, para o estran-
-geiro, de produtos nacionais ou nacionalizados tem como fato gerador a saída destes
-do território nacional.
+Art. 23. O imposto, de competência da União, sobre a exportação, para o estrangeiro, de produtos nacionais ou nacionalizados tem como fato gerador a saída destes do território nacional.
 Art. 24.    A base de cálculo do imposto é:
         I – quando a alíquota seja específica, a unidade de medida adotada pela lei
 tributária;
@@ -43,7 +42,7 @@ da política cambial e do comércio exterior.
 Art. 27.   Contribuinte do imposto é o exportador ou quem a lei a ele equiparar.
 Art. 28. A receita líquida do imposto destina-se à formação de reservas monetárias,
 na forma da lei.
-
+outro pais extrangeiro exterior Afeganistão África do Sul Albânia brasil Alemanha Antártida Arábia Saudita Argélia Argentina Armênia Austrália Áustria Azerbaijão Bahamas Bahrein Bangladesh Barbados Belarus Bélgica Belize Benin Bermudas Bolívia Bulgária Canadá Chile China Colômbia Congo Coréia do Norte Coréia do Sul Costa do Marfim Costa Rica Croácia Cuba Curaçao Dinamarca Djibuti Dominica Egito Emirados Árabes Unidos Equador Eslováquia Eslovênia Espanha Estados Unidos França Grécia Irlanda Islândia Israel Itália Jamaica Japão Jersey Jordânia Kiribati Porto Rico Portugal Quênia República Dominicana República Tcheca Suécia Suíça Suriname Tadjiquistão Tailândia Taiwan Tanzânia Território Britânico do Oceano Índico Territórios do Sul da França Territórios Palestinos Ocupados Timor Leste Togo Tonga Trinidad & Tobago Tunísia Turcomenistão Turquia Tuvalu Ucrânia Uganda Uruguai Uzbequistão Vanuatu Vaticano Venezuela
                                  CAPÍTULO III
                        Impostos sobre o Patrimônio e a Renda
 
@@ -55,7 +54,7 @@ como definido na lei civil, localização fora da zona urbana do Município.
 Art. 30.   A base do cálculo do imposto é o valor fundiário.
 Art. 31. Contribuinte do imposto é o proprietário do imóvel, o titular de seu domínio
 útil, ou o seu possuidor a qualquer título.
-
+imóvel fazenda campo interior
                                    SEÇÃO II
              Impostos sobre a Propriedade Predial e Territorial Urbana
 Art. 32. O imposto, de competência dos Municípios, sobre a propriedade predial e
@@ -84,7 +83,7 @@ dos bens móveis mantidos, em caráter permanente ou temporário, no imóvel, pa
 efeito de sua utilização, exploração, aformoseamento ou comodidade.
 Art. 34. Contribuinte do imposto é o proprietário do imóvel, o titular do seu domínio
 útil, ou o seu possuidor a qualquer título.
-
+imóvel cidade metropole casa edificio condominio predio apartamento
                                          SEÇÃO III
                              Imposto sobre a Transmissão de Bens
                              Imóveis e de Direitos a eles Relativos
@@ -135,7 +134,7 @@ bre que versarem os direitos cedidos, mesmo que a mutação patrimonial decorra 
 sucessão aberta no estrangeiro.
 Art. 42. Contribuinte do imposto é qualquer das partes na operação tributada, como
 dispuser a lei.
-
+casa apartamento predio
                                      SEÇÃO IV
                Impostos sobre a Renda e Proventos de Qualquer Natureza
 Art. 43. O imposto, de competência da União, sobre a renda e proventos de qualquer
@@ -205,11 +204,11 @@ cabotagem e demais vias internas.
 Art. 51.      Contribuinte do imposto é:
           I – o importador ou quem a lei a ele equiparar;
           II – o industrial ou quem a lei a ele equiparar;
-        III – o comerciante de produtos sujeitos ao imposto, que os forneça aos con-
-tribuintes definidos no inciso anterior;
+        III – o comerciante de produtos sujeitos ao imposto, que os forneça aos contribuintes definidos no inciso anterior;
           IV – o arrematante de produtos apreendidos ou abandonados, levados a leilão.
-   Parágrafo único. Para os efeitos deste imposto, considera-se contribuinte autôno-
-mo qualquer estabelecimento de importador, industrial, comerciante ou arrematante.
+   Parágrafo único. Para os efeitos deste imposto, considera-se contribuinte autônomo qualquer estabelecimento de importador, industrial, comerciante ou arrematante.
+industria enlatado Biscoitos recheados Salgadinhos Refrigerantes Frutas em calda Frutas cristalizadas na qual é adicionado o açúcar
+Cenoura, picles e milho preparados em salmoura Queijos, pães e massas químicos limpeza lanche comida
 
                                       SEÇÃO IV
                  Imposto sobre Operações de Crédito, Câmbio e Seguro,
@@ -254,7 +253,7 @@ Art. 66. Contribuinte do imposto é qualquer das partes na operação tributada,
 dispuser a lei.
 Art. 67. A receita líquida do imposto destina-se a formação de reservas monetárias,
 na forma da lei.
-
+creditar fiar fiador calcao empréstimo emprestar hipoteca cambiar trocar comercio negociar
                                       SEÇÃO V
                  Imposto sobre Serviços de Transportes e Comunicações
 Art. 68. O imposto, de competência da União, sobre serviços de transportes e co-
@@ -268,6 +267,7 @@ salvo quando os pontos de transmissão e de recebimento se situem no território
 mesmo Município e a mensagem em curso não possa ser captada fora desse território.
 Art. 69.      A base de cálculo do imposto é o preço do serviço.
 Art. 70.      Contribuinte do imposto é o prestador do serviço.
+Comunicacao chat comunicar redes sociais telefonia operadora celular whatsapp internet ligação vaiculo carro onibus metro passagem frete trânsito deslocamento condução 
 
                         
                                        SEÇÃO I
@@ -294,6 +294,7 @@ a produção ou sobre o consumo;
         II – ao imposto sobre a importação, quando a incidência seja sobre essa operação;
        III – ao imposto sobre operações relativas à circulação de mercadorias, quando
 a incidência seja sobre a distribuição.
+gasolina carro veiculo moto alcool diesel gas natural petróleo querosene combustivel oleo luz metal minerio
 
                                      SEÇÃO II
                                Impostos Extraordinários
